@@ -1,8 +1,7 @@
 #include "main.h"
 #include <time.h>
-#include "mnist.h"
+#include "read_mnist.h"
 #include <math.h>
-
 /* Shares of ARMOR */
 share minput[n], mweight1[n * n1], mweight2[n1 * n2], mbias1[n1], mbias2[n2];
 uint8_t r_input[n];
@@ -230,7 +229,7 @@ void run_clock(int counter)
 }
 
 int main(int argc, char *argv[]) {
-    load_mnist();
+    load_mnist_test();
 
     if (argc != 3) {
         fprintf(stderr, "Usage: %s <mode>\n", argv[0]);
