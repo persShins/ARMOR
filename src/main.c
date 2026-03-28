@@ -230,7 +230,7 @@ void run_clock(int counter)
 }
 
 int main(int argc, char *argv[]) {
-    load_mnist();
+    load_mnist_test();
 
     if (argc != 3) {
         fprintf(stderr, "Usage: %s <mode>\n", argv[0]);
