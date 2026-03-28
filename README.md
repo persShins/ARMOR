@@ -51,8 +51,18 @@ The desired mode is selected via a command-line argument:
 
 Additionally, the user can select the MNIST dataset size, up to a maximum of 10,000 samples.
 
-For example, to run the clock cycle measurement with 10,000 MNIST samples:
+For example, to run the clock cycle measurement with 10,000 MNIST samples for Table 4 in our paper:
 
 ```bash
-./test 0 10000
+./test 1 10000
+```
+
+This will reproduce the exact results shown in Table 4, where the label loss corresponds to the accuracy (89.03%).
+
+```bash
+hidden layer node loss: 0
+hidden layer loss: 0
+output layer loss: 0
+output loss: 0
+label loss: 1097
 ```
