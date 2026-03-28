@@ -1,6 +1,6 @@
 #include "main.h"
 #include <time.h>
-#include "mnist.h"
+#include "read_mnist.h"
 #include <math.h>
 
 /* Shares of ARMOR */
