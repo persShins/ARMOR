@@ -22,7 +22,6 @@ https://github.com/takafumihoriuchi/MNIST_for_C
 
 Please download the following files:
 
-- `mnist.h` (place this file in the `include/` directory)
 - `t10k-images.idx3-ubyte`(place this file in the `data/` directory)
 - `t10k-labels.idx1-ubyte`(place this file in the `data/` directory)
 
@@ -51,14 +50,13 @@ The desired mode is selected via a command-line argument:
 
 Additionally, the user can select the MNIST dataset size, up to a maximum of 10,000 samples.
 
-For example, to run the clock cycle measurement with 10,000 MNIST samples for Table 4 in our paper:
+For example, to run the accuracy loss measurement with 10,000 MNIST samples illustrated in Table 4:
 
 ```bash
 ./test 1 10000
 ```
 
-This will reproduce the exact results shown in Table 4, where the label loss corresponds to the accuracy (89.03%).
-
+The expected result includes label loss, which measures whether the predicted label differs from the true label:
 ```bash
 hidden layer node loss: 0
 hidden layer loss: 0
