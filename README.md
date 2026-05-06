@@ -16,15 +16,9 @@ Tested on:
 System dependencies:
 - OpenSSL development package (libcrypto)
 
-The MNIST dataset files required for our experiments can be obtained from the following repository:
+The MNIST dataset files required for our experiments is modified into a combined file of images and labels:
 
-https://github.com/takafumihoriuchi/MNIST_for_C
-
-Please download the following files:
-
-- `t10k-images.idx3-ubyte`(place this file in the `data/` directory)
-- `t10k-labels.idx1-ubyte`(place this file in the `data/` directory)
-
+- `combined.bytes` (This is already in the `data/`) 
 ---
 
 
