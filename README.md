@@ -16,11 +16,14 @@ Tested on:
 System dependencies:
 - OpenSSL development package (libcrypto)
 
-The MNIST dataset files required for our experiments is modified into a combined file of images and labels:
+The MNIST dataset files required for our experiments were converted into a single combined file containing both images and labels:
 
-- `combined.bytes` (This is already in the `data/`) 
----
+- `data/combined.bytes`
 
+This artifact uses the MNIST dataset, which is third-party material.
+The file `data/combined.bytes` is derived from the MNIST dataset.
+MNIST is distributed under the Creative Commons Attribution-Share Alike 3.0 license.
+Source: http://yann.lecun.com/exdb/mnist/
 
 ## Running the Experiments
 
